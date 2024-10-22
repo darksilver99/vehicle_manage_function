@@ -103,7 +103,7 @@ exports.onCreatePaymentList = functions.firestore.document('payment_list/{doc_id
 
 
 function sendNotify(message, image1, image2) {
-    sendToLine(message, image1, image2)
+    // sendToLine(message, image1, image2)
     sendToTelegram(message, image1, image2)
 }
 
